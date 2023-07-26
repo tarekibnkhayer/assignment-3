@@ -1,42 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fruit brust</title>
     <!-- tailwind and daisy ui integrated -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- font lato integrated -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-<!-- internal css and customize tailwind class creation -->
-<style type="text/tailwindcss">
-    .font-lato{
-        font-family: 'Lato', sans-serif;
-    }
-
-</style>
-</head>
-<body class="font-lato container">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font lato integrated -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome kit integrated -->
+    <script src="https://kit.fontawesome.com/6f4c5cea35.js" crossorigin="anonymous"></script>
+    <!-- tailwind css customize color creation -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- internal css and customize tailwind class creation -->
+    <style type="text/tailwindcss">
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-lato container">
     <!-- header -->
     <header class="max-w-screen-xl mx-auto">
-        <!-- nav section -->
-        <nav></nav>
-        <!-- banner section -->
-       <section></section>
+      <!-- nav section -->
+      <nav class="md:bg-primary  flex  md:justify-around rounded-l-full rounded-r-full md:mt-20 items-center lg:p-9">
+        <div>
+            <ul class="md:flex gap-7 hidden sm:block md:text-center  text-white lg:text-xl lg:font-medium">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All Fruits</li>
+            </ul>
+        </div>
+        <div class="flex  items-center lg:gap-4 ml-5">
+            <img src="images/logo.png" alt="">
+            <h3 class="md:text-white   text-xl lg:text-4xl lg:font-bold">Fruit Burst</h3>
+        </div>
+        <div class="hidden sm:block relative">
+            <input type="text" placeholder="Search here" class="rounded-l-full rounded-r-full p-2 lg:w-96">
+            <i class="fa-solid fa-magnifying-glass absolute right-5 top-3"></i>
+        </div>
+        <div class="md:hidden ml-52">
+            <div class="dropdown dropdown-end ">
+                <label tabindex="0" class=" m-1"><i class="fa-solid fa-bars"></i></label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+        </div>
+         
+      </nav>
+      <!-- banner section -->
+      <section></section>
     </header>
     <!-- main -->
     <main class="max-w-screen-xl mx-auto">
-        <!-- deal of the day section -->
-        <section></section>
-        <!--meet the team section -->
-        <section></section>
-        <!-- why choose us section -->
-        <section></section>
+      <!-- deal of the day section -->
+      <section></section>
+      <!--meet the team section -->
+      <section></section>
+      <!-- why choose us section -->
+      <section></section>
     </main>
     <!-- footer -->
     <footer></footer>
-</body>
+  </body>
 </html>
