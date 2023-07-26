@@ -28,6 +28,8 @@
             colors: {
               clifford: "#da373d",
               primary: "#F85559",
+              secondary:"#121212",
+              'des-color':"#12121299"
             },
           },
         },
@@ -46,6 +48,12 @@
       }
       .banner-des{
         @apply mb-5 md:text-xl font-medium text-white 
+      }
+      .primary-title{
+        @apply lg:text-5xl text-2xl font-extrabold 
+      }
+      .primary-des{
+        @apply text-base font-medium leading-6
       }
     </style>
   </head>
@@ -152,11 +160,43 @@
             </div>
           </div>
       </section>
+      <!-- fruit container -->
     </header>
     <!-- main -->
     <main class="max-w-screen-xl mx-auto">
       <!-- deal of the day section -->
-      <section></section>
+      <section class="lg:mt-36 mt-16  lg:flex justify-between items-center text-center lg:text-left">
+<div>
+    <h2 class="primary-title text-secondary mb-6">Deal of the day</h2>
+    <p class="primary-des des-color lg:w-[600px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+</div>
+<div class="ml-20 mt-5 md:ml-60"><div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:15;"></span>
+      </span>
+      days
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:10;"></span>
+      </span>
+      hours
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:24;"></span>
+      </span>
+      min
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:18;"></span>
+      </span>
+      sec
+    </div>
+  </div></div>
+      </section>
       <!--meet the team section -->
       <section></section>
       <!-- why choose us section -->
