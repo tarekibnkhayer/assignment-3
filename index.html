@@ -56,6 +56,15 @@
       .primary-des{
         @apply text-base font-medium leading-6
       }
+      .close-btn{
+        @apply rounded-lg py-5 px-7 justify-center items-center text-[#F85559] text-xl font-extrabold border border-[#F85559]
+      }
+      .modal-fruit-name{
+        @apply text-[#121212] text-4xl font-extrabold
+      }
+      .modal-des{
+        @apply text-[#121212CC] text-base font-medium leading-7
+      }
      
 
     </style>
@@ -228,7 +237,23 @@
         <p class="primary-des text-des-color mt-6 mb-6">Apple</p>
       
        <div><img src="images/Group 24.svg" alt=""></div>
-          <p class="mt-8">Details</p>
+          <!-- Open the modal using ID.showModal() method -->
+<button class="text-primary mt-4" onclick="my_modal_5.showModal()">Details</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+   <div class="flex flex-col justify-center items-center"> <img src="images/fruit6.png" alt="">
+    <h3 class= "modal-fruit-name mt-6 mb-6">Apple</h3>
+    <p class="py-4 modal-des">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div><img src="images/Group 24.svg" alt="" srcset=""></div></div>
+    <div class="modal-action flex justify-between">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="close-btn">Close</button>
+      <button class="fruit-btn">Buy Now</button>
+      
+
+    </div>
+  </form>
+</dialog>
         </div>
         <div class="border rounded-lg bg-white border-des-color flex flex-col justify-center items-center p-12">
             <div><img src="images/fruit7.png" alt=""></div>
@@ -237,7 +262,23 @@
         <p class="primary-des text-des-color mt-6 mb-6">Orange</p>
       
        <div><img src="images/Group 24.svg" alt=""></div>
-          <p class="mt-8">Details</p>
+           <!-- Open the modal using ID.showModal() method -->
+<button class="text-primary mt-4" onclick="my_modal_6.showModal()">Details</button>
+<dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+   <div class="flex flex-col justify-center items-center"> <img src="images/fruit7.png" alt="">
+    <h3 class= "modal-fruit-name mt-6 mb-6">Orange</h3>
+    <p class="py-4 modal-des">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div><img src="images/Group 24.svg" alt="" srcset=""></div></div>
+    <div class="modal-action flex justify-between">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="close-btn">Close</button>
+      <button class="fruit-btn">Buy Now</button>
+      
+
+    </div>
+  </form>
+</dialog>
         </div>
         <div class="border rounded-lg bg-white border-des-color flex flex-col justify-center items-center p-12">
             <div><img src="images/fruit8.png" alt=""></div>
@@ -246,7 +287,23 @@
         <p class="primary-des text-des-color mt-6 mb-6">Red Dragon</p>
       
        <div><img src="images/Group 24.svg" alt=""></div>
-          <p class="mt-8">Details</p>
+          <!-- Open the modal using ID.showModal() method -->
+<button class="text-primary mt-4" onclick="my_modal_7.showModal()">Details</button>
+<dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+   <div class="flex flex-col justify-center items-center"> <img src="images/fruit8.png" alt="">
+    <h3 class= "modal-fruit-name mt-6 mb-6">Red Dragon</h3>
+    <p class="py-4 modal-des">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div><img src="images/Group 24.svg" alt="" srcset=""></div></div>
+    <div class="modal-action flex justify-between">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="close-btn">Close</button>
+      <button class="fruit-btn">Buy Now</button>
+      
+
+    </div>
+  </form>
+</dialog>
         </div>
         <div class="border rounded-lg bg-white border-des-color flex flex-col justify-center items-center p-12">
             <div><img src="images/fruit9.png" alt=""></div>
@@ -255,7 +312,23 @@
         <p class="primary-des text-des-color mt-6 mb-6">Banana</p>
       
        <div><img src="images/Group 24.svg" alt=""></div>
-          <p class="mt-8">Details</p>
+ <!-- Open the modal using ID.showModal() method -->
+ <button class="text-primary mt-4" onclick="my_modal_8.showModal()">Details</button>
+ <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+   <form method="dialog" class="modal-box">
+    <div class="flex flex-col justify-center items-center"> <img src="images/fruit9.png" alt="">
+     <h3 class= "modal-fruit-name mt-6 mb-6">Banana</h3>
+     <p class="py-4 modal-des">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+     <div><img src="images/Group 24.svg" alt="" srcset=""></div></div>
+     <div class="modal-action flex justify-between">
+       <!-- if there is a button in form, it will close the modal -->
+       <button class="close-btn">Close</button>
+       <button class="fruit-btn">Buy Now</button>
+       
+ 
+     </div>
+   </form>
+ </dialog>
         </div>
       </div>
       <div class="text-center">
